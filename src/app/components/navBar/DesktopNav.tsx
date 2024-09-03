@@ -13,6 +13,7 @@ interface Props {
 const logoImage = '/assets/images/logo/logo.png';
 
 const handleScroll = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   const chooseNameSection = document.getElementById('choose-name');
   if (chooseNameSection) {
     chooseNameSection.scrollIntoView({ behavior: 'smooth' });
@@ -28,6 +29,10 @@ function DesktopNav({ className }: Props) {
           alt='Website logo'
           height={NAV_BAR_LOGO_SIZE.HEIGHT}
           width={NAV_BAR_LOGO_SIZE.WIDTH}
+          style={{
+            width: NAV_BAR_LOGO_SIZE.WIDTH,
+            height: NAV_BAR_LOGO_SIZE.HEIGHT
+          }}
           priority
         />
         <span className='ml-1 text-2xl uppercase text-black'>VPN</span>

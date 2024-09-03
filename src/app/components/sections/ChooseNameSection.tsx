@@ -63,7 +63,10 @@ function ChooseNameSection() {
 
   return (
     <section className='mx-auto mb-24 flex w-[392px] max-w-full flex-col justify-center lg:w-[896px]'>
-      <h2 id='choose-name'  className='text-left text-2xl font-bold uppercase text-black'>
+      <h2
+        id='choose-name'
+        className='text-left text-2xl font-bold uppercase text-black'
+      >
         Choose <span className='text-blue'>your name</span>
       </h2>
       <div className='mt-4'>
@@ -73,16 +76,26 @@ function ChooseNameSection() {
             className='mt-6 flex h-20 w-[392px] max-w-full rounded-2xl px-2 py-8 text-2xl shadow-shadow-block lg:w-[896px]'
           >
             <label className='flex items-center'>
-              <input
-                type='radio'
-                name='user'
-                className='h-6 w-6 cursor-pointer rounded-full border border-grey'
-                onChange={() => selectUser(user)}
-                checked={
-                  selectedUser?.name.first === user.name.first &&
-                  selectedUser?.name.last === user.name.last
-                }
-              />
+              <div className='relative'>
+                <input
+                  type='radio'
+                  name='user'
+                  className='hidden'
+                  onChange={() => selectUser(user)}
+                  checked={
+                    selectedUser?.name.first === user.name.first &&
+                    selectedUser?.name.last === user.name.last
+                  }
+                />
+                <div
+                  className={`flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border border-grey ${selectedUser?.name.first === user.name.first && selectedUser?.name.last === user.name.last ? 'bg-orange border-orange' : 'bg-white border-grey'}`}
+                >
+                  {selectedUser?.name.first === user.name.first &&
+                    selectedUser?.name.last === user.name.last && (
+                      <div className='h-4 w-4 rounded-full bg-orange border-orange' />
+                    )}
+                </div>
+              </div>
               <span className='ml-2 text-base font-semibold text-black'>
                 {user.name.first} {user.name.last}
               </span>
@@ -132,7 +145,7 @@ function ChooseNameSection() {
           </div>
           <Button
             type='button'
-            className='mx-auto mt-4 h-16 w-96 max-w-full items-center justify-center rounded-2xl bg-orange text-2xl font-bold text-white shadow-shadow-block lg:w-[896px]'
+            className='mx-auto mt-4 h-16 w-full max-w-full items-center justify-center rounded-2xl bg-orange text-2xl font-bold text-white shadow-shadow-block'
             text='Continue'
             onClick={handleContinueClick}
           />

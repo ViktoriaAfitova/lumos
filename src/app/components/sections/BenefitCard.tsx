@@ -9,7 +9,7 @@ interface Props {
 
 const BenefitCard = ({ imageSrc, title, subtitle, description }: Props) => {
   return (
-    <div className='flex w-[424px] flex-col items-center justify-center border-t border-grey py-4'>
+    <div className='flex w-[329px] lg:w-[424px] flex-col items-center justify-center border-t border-grey py-4'>
       <Image
         width={104}
         height={52}
