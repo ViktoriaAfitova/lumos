@@ -12,11 +12,11 @@ const config: Config = {
         blue: '#3177F2',
         orange: '#FF5D17',
         grey: '#646464',
-        black: '#2B2B2B'
+        black: '#2B2B2B',
       },
       boxShadow: {
         'shadow-header': '0 4px 16px rgba(0, 0, 0, 0.14)',
-        'shadow-access-block': '0 3px 11px rgba(0, 0, 0, 0.25)'
+        'shadow-access-block': '0 3px 11px rgba(0, 0, 0, 0.25)',
       },
     },
   },

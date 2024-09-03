@@ -9,14 +9,14 @@ const server = '/assets/images/server.png';
 
 function AccessSection() {
   return (
-    <section className='mt-16 flex flex-col items-center justify-center'>
-      <h1 className='text-3xl font-bold flex-none text-center'>
-        Access{' '}
-        <span className='text-blue'>everything</span><br />
-        <span className='text-blue'>securely</span>{' '} 
-        <span>with</span><br /> 
+    <section className='mt-16 flex flex-col items-center justify-center px-4'>
+      <h1 className='flex-none text-center text-3xl font-bold'>
+        Access <span className='text-blue'>everything</span>
+        <br />
+        <span className='text-blue'>securely</span> <span>with</span>
+        <br />
         VPN
-  </h1>
+      </h1>
       <Image
         src={accessImage}
         alt='Access section image'
@@ -24,32 +24,20 @@ function AccessSection() {
         width={428}
         priority
       />
-      <Button         
+      <Button
         type='button'
-        className='mt-4 h-16 w-96 rounded-2xl bg-orange text-white text-2xl font-bold' 
-        text='Get VPN' 
+        className='mt-4 h-16 w-96 rounded-2xl bg-orange text-2xl font-bold text-white'
+        text='Get VPN'
       />
       <div className='mt-6 flex'>
-        <Image
-          src={wreathLeft}
-          alt='Wreath'
-          height={42}
-          width={22}
-          priority
-        />
-          <div className='flex flex-col items-center mx-4'>
-            <p className='text-blue text-sm font-normal'>Trusted by</p>
-            <p className='text-blue text-sm font-semibold'>50M+ Users</p>
-          </div>
-        <Image
-          src={wreathRight}
-          alt='Wreath'
-          height={42}
-          width={22}
-          priority
-        />
+        <Image src={wreathLeft} alt='Wreath' height={42} width={22} priority />
+        <div className='mx-4 flex flex-col items-center'>
+          <p className='text-sm font-normal text-blue'>Trusted by</p>
+          <p className='text-sm font-semibold text-blue'>50M+ Users</p>
+        </div>
+        <Image src={wreathRight} alt='Wreath' height={42} width={22} priority />
       </div>
-      <div className='mt-6 w-[896px] h-20 max-w-full rounded-2xl shadow-shadow-access-block flex items-center justify-center mx-auto'>
+      <div className='mx-auto mt-6 flex h-20 w-[396px] max-w-full items-center justify-center rounded-2xl shadow-shadow-access-block lg:w-[896px]'>
         <div className='flex items-center'>
           <Image
             src={location}
@@ -58,15 +46,15 @@ function AccessSection() {
             width={24}
             style={{
               width: '24px',
-              height: '24px'
+              height: '24px',
             }}
           />
           <div className='ml-2'>
-            <p className='text-black text-2xl font-bold'>50+</p>
-            <p className='text-sm text-grey font-base'>Locations</p>
+            <p className='text-2xl font-bold text-black'>50+</p>
+            <p className='font-base text-sm text-grey'>Locations</p>
           </div>
         </div>
-        <div className='h-6 border-r border-grey mx-24'></div>
+        <div className='mx-12 h-6 border-r border-grey lg:mx-24'></div>
         <div className='flex items-center'>
           <Image
             src={server}
@@ -75,16 +63,19 @@ function AccessSection() {
             width={24}
             style={{
               width: '24px',
-              height: '24px'
+              height: '24px',
             }}
           />
           <div className='ml-2'>
-            <p className='text-black text-2xl font-bold'>1000+</p>
-            <p className='text-sm text-grey font-base'>Servers</p>
+            <p className='text-2xl font-bold text-black'>1000+</p>
+            <p className='font-base text-sm text-grey'>Servers</p>
           </div>
         </div>
       </div>
-      <small className='mt-6 text-base text-grey font-medium'>VPN-your <span className='text-blue'>ultimate</span> solution for a private and secure online experience!</small>
+      <small className='mt-6 text-center text-base font-medium text-grey'>
+        VPN-your <span className='text-blue'>ultimate</span> solution for a
+        private and secure online experience!
+      </small>
     </section>
   );
 }
