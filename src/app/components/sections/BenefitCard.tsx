@@ -9,17 +9,21 @@ interface Props {
 
 const BenefitCard = ({ imageSrc, title, subtitle, description }: Props) => {
   return (
-    <div className='flex w-[424px] flex-col justify-center items-center border-t border-grey py-4'>
+    <div className='flex w-[424px] flex-col items-center justify-center border-t border-grey py-4'>
       <Image
         width={104}
         height={52}
         src={imageSrc}
         alt={title}
-        className='mt-4object-cover' 
+        className='mt-4object-cover'
       />
-      <h2 className='mt-4 text-orange  text-2xl font-bold uppercase'>{title}</h2>
-      <h3 className='mb-2 text-blue text-2xl font-bold uppercase'>{subtitle}</h3>
-      <p className='mb-4 text-grey text-base font-semibold text-center'>{description}</p>
+      <h2 className='mt-4 text-2xl font-bold uppercase text-orange'>{title}</h2>
+      <h3 className='mb-2 text-2xl font-bold uppercase text-blue'>
+        {subtitle}
+      </h3>
+      <p className='mb-4 text-center text-base font-semibold text-grey'>
+        {description}
+      </p>
     </div>
   );
 };

@@ -33,19 +33,22 @@ const benefitCards = [
 function BenefitsSection() {
   return (
     <>
-      <section className='mt-16 flex justify-center items-center px-4'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-2 max-w-screen-lg'>
+      <section className='mt-16 flex items-center justify-center px-4'>
+        <div className='grid max-w-screen-lg grid-cols-1 gap-x-8 gap-y-2 lg:grid-cols-2'>
           {benefitCards.map((benefitCard, title) => (
             <BenefitCard
               key={title}
               imageSrc={benefitCard.imageSrc}
               title={benefitCard.title}
               subtitle={benefitCard.subtitle}
-              description={benefitCard.description} />
+              description={benefitCard.description}
+            />
           ))}
         </div>
       </section>
-      <h4 className='text-blue text-2xl font-bold text-center my-16'>Millions of people trust us!</h4>
+      <h4 className='my-16 text-center text-2xl font-bold text-blue'>
+        Millions of people trust us!
+      </h4>
     </>
   );
 }
