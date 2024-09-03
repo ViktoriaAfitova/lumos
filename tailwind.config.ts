@@ -12,6 +12,7 @@ const config: Config = {
         blue: '#3177F2',
         orange: '#FF5D17',
         grey: '#646464',
+        greyLight: '#F8F8F8',
         black: '#2B2B2B',
       },
       boxShadow: {

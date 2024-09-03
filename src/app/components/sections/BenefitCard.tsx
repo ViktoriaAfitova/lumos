@@ -15,7 +15,7 @@ const BenefitCard = ({ imageSrc, title, subtitle, description }: Props) => {
         height={52}
         src={imageSrc}
         alt={title}
-        className='mt-4object-cover'
+        className='mt-4 object-cover'
       />
       <h2 className='mt-4 text-2xl font-bold uppercase text-orange'>{title}</h2>
       <h3 className='mb-2 text-2xl font-bold uppercase text-blue'>

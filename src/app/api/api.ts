@@ -1,6 +1,6 @@
-import axios from "axios";
-import { BASE_URL } from "./baseUrl";
-import { User } from "./types";
+import axios from 'axios';
+import { BASE_URL } from './baseUrl';
+import { User } from './types';
 
 const api = axios.create({
   baseURL: BASE_URL,
