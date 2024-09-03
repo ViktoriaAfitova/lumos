@@ -9,7 +9,7 @@ interface Props {
   className?: string;
 }
 
-const logoImage = `/assets/images/logo/logo.png`;
+const logoImage = '/assets/images/logo/logo.png';
 
 function DesktopNav({ className }: Props) {
   return (

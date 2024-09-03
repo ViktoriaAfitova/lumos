@@ -1,3 +1,9 @@
+import AccessSection from '@/app/components/sections/AccessSection';
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <AccessSection />
+    </main>
+  );
 }
