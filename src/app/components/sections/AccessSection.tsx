@@ -37,7 +37,7 @@ function AccessSection() {
         </div>
         <Image src={wreathRight} alt='Wreath' height={42} width={22} priority />
       </div>
-      <div className='mx-auto mt-6 flex h-20 w-[396px] max-w-full items-center justify-center rounded-2xl shadow-shadow-access-block lg:w-[896px]'>
+      <div className='mx-auto mt-6 flex h-20 w-[396px] max-w-full items-center justify-center rounded-2xl shadow-shadow-block lg:w-[896px]'>
         <div className='flex items-center'>
           <Image
             src={location}

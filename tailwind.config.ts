@@ -16,7 +16,7 @@ const config: Config = {
       },
       boxShadow: {
         'shadow-header': '0 4px 16px rgba(0, 0, 0, 0.14)',
-        'shadow-access-block': '0 3px 11px rgba(0, 0, 0, 0.25)',
+        'shadow-block': '0 3px 11px rgba(0, 0, 0, 0.25)',
       },
     },
   },
