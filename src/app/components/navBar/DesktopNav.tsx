@@ -25,6 +25,7 @@ function DesktopNav({ className }: Props) {
         <span className='ml-1 text-2xl uppercase text-black'>VPN</span>
       </NextLink>
       <Button
+        type='button'
         className='h-10 w-24 rounded-3xl bg-blue text-white'
         text='Get VPN'
       />
