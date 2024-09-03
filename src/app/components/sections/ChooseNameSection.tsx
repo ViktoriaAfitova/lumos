@@ -63,7 +63,7 @@ function ChooseNameSection() {
 
   return (
     <section className='mx-auto mb-24 flex w-[392px] max-w-full flex-col justify-center lg:w-[896px]'>
-      <h2 className='text-left text-2xl font-bold uppercase text-black'>
+      <h2 id='choose-name'  className='text-left text-2xl font-bold uppercase text-black'>
         Choose <span className='text-blue'>your name</span>
       </h2>
       <div className='mt-4'>

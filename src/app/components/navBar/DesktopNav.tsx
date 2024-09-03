@@ -1,3 +1,4 @@
+'use client';
 import { cn } from '@/utils/cn';
 import NavWrapper from './NavWrapper';
 import { NAV_BAR_LOGO_SIZE } from './const';
@@ -10,6 +11,13 @@ interface Props {
 }
 
 const logoImage = '/assets/images/logo/logo.png';
+
+const handleScroll = () => {
+  const chooseNameSection = document.getElementById('choose-name');
+  if (chooseNameSection) {
+    chooseNameSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 function DesktopNav({ className }: Props) {
   return (
@@ -28,6 +36,7 @@ function DesktopNav({ className }: Props) {
         type='button'
         className='h-10 w-24 rounded-3xl bg-blue text-white'
         text='Get VPN'
+        onClick={handleScroll}
       />
     </NavWrapper>
   );
